@@ -1,3 +1,8 @@
+@font-face{
+    font-family: clock;
+    src: url('/font/technology.bold.ttf');
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -11,7 +16,7 @@ body {
 
 #calculator {
     background-color: rgb(4, 5, 31);
-    padding: 30px;
+    padding: 23px;
     width: 350px;
     height: 500px;
     display: flex;
@@ -20,11 +25,24 @@ body {
 }
 
 #screen {
-    background-color: rgb(0, 0, 99);
+    background-color: rgb(0, 0, 86);
     width: 100%;
     height: 100px;
     margin: 10px 0 30px 0;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    font-family: "clock";
+    font-size: 40px;
+}
+
+#screen > h3 {
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    color: rgba(0, 179, 0, 0.815)
 }
 
 #clearBtns {
